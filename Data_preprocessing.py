@@ -27,7 +27,7 @@ purposes = []
 email_regex = r'[0-9a-zA-Z_]{0,19}@[0-9a-zA-Z]{1,13}\.(?:com|cn|net)'
 url_regex = r"\"?http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+\"?"
 
-for line in codecs.open("./annotated_sentences.txt", "r", "utf-8", 'ignore').readlines():
+for line in codecs.open("./Data/annotated_sentences.txt", "r", "utf-8", 'ignore').readlines():
     parts = line.split('\t')
     if parts[11].strip() != "0" and parts[12].strip() != "0":
         citation_with_context = parts[3] + " "+ parts[5] + " " + parts [7] + " " + parts[9]
@@ -68,19 +68,19 @@ print(len(polarities))
 print(len(purposes))
 
 #save
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/citation_with_context.pk', 'wb') as f:
+with open('./Pickle_Data/citation_with_context.pk', 'wb') as f:
     pickle.dump(texts_with_context, f)
 
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/citation.pk', 'wb') as f:
+with open('./Pickle_Data/citation.pk', 'wb') as f:
     pickle.dump(texts, f)
 
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/pre_citation_with_context.pk', 'wb') as f:
+with open('./Pickle_Data/pre_citation_with_context.pk', 'wb') as f:
     pickle.dump(preprocessed_text_with_context, f)
 
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/polarities.pk', 'wb') as f:
+with open('./Pickle_Data/polarities.pk', 'wb') as f:
     pickle.dump(polarities, f)
 
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/purposes.pk', 'wb') as f:
+with open('./Pickle_Data/purposes.pk', 'wb') as f:
     pickle.dump(purposes, f)
 
 # Check whether data are saved
