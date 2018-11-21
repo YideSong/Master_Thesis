@@ -23,19 +23,19 @@ from sklearn.utils import shuffle
 
 
 #read preprocessed data from local
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/citation_with_context_vec.pk', 'rb') as f:
+with open('./Pickle_Data/citation_with_context_vec.pk', 'rb') as f:
     vec_texts_with_context = pickle.load(f)
 #    print(texts_with_context)
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/pre_citation_with_context_vec.pk', 'rb') as f:
+with open('./Pickle_Data/pre_citation_with_context_vec.pk', 'rb') as f:
     vec_pre_texts_with_context = pickle.load(f)
 #
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/citation_vec.pk', 'rb') as f:
+with open('./Pickle_Data/citation_vec.pk', 'rb') as f:
     vec_texts = pickle.load(f)
 #    print(texts)
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/polarities.pk', 'rb') as f:
+with open('./Pickle_Data/polarities.pk', 'rb') as f:
     polarities = pickle.load(f)
 #    print(polarities)
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/purposes.pk', 'rb') as f:
+with open('./Pickle_Data/purposes.pk', 'rb') as f:
     purposes = pickle.load(f)
 #    print(purposes)
 

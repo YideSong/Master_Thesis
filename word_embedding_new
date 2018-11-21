@@ -44,19 +44,19 @@ print(a[0])
 
 
 #read preprocessed data from local
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/citation_with_context.pk', 'rb') as f:
+with open('./Pickle_Data/citation_with_context.pk', 'rb') as f:
     texts_with_context = pickle.load(f)
 #    print(texts_with_context)
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/pre_citation_with_context.pk', 'rb') as f:
+with open('./Pickle_Data/pre_citation_with_context.pk', 'rb') as f:
     pre_texts_with_context = pickle.load(f)
 #    print(pre_texts_with_context)
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/citation.pk', 'rb') as f:
+with open('./Pickle_Data/citation.pk', 'rb') as f:
     texts = pickle.load(f)
 #    print(texts)
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/polarities.pk', 'rb') as f:
+with open('./Pickle_Data/polarities.pk', 'rb') as f:
     polarities = pickle.load(f)
 #    print(polarities)
-with open('C:/Users/songi/PycharmProjects/MasterThesis/purposes.pk', 'rb') as f:
+with open('./Pickle_Data/purposes.pk', 'rb') as f:
     purposes = pickle.load(f)
 #    print(purposes)
 
@@ -165,17 +165,17 @@ print(len(vector_pre_citation_with_contexts_X))
 #print(vector_citation_with_contexts_X[0])
 
 # Save vectors of each citations to local.
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/citation_vec.pk', 'wb') as f:
+with open('./Pickle_Data/citation_vec.pk', 'wb') as f:
     pickle.dump(vector_citations_X, f)
 print("--------Vectors saved in local------------")
 
 # Save vectors of each citations (with contexts) to local.
-with open('C:/Users/songi/PycharmProjects/MasterThesis/Pickle_Data/citation_with_context_vec.pk', 'wb') as f:
+with open('./Pickle_Data/citation_with_context_vec.pk', 'wb') as f:
     pickle.dump(vector_citation_with_contexts_X, f)
 print("--------Vectors saved in local------------")
 
 # Save vectors of each citations (with contexts) to local.
-with open('C:/Users/songi/PycharmProjects/MasterThesis/pre_citation_with_context_vec.pk', 'wb') as f:
+with open('./Pickle_Data/pre_citation_with_context_vec.pk', 'wb') as f:
     pickle.dump(vector_pre_citation_with_contexts_X, f)
 # with open('C:/Users/songi/PycharmProjects/MasterThesis/citation_with_context_vec.pk', 'rb') as f:
 #     data = pickle.load(f)

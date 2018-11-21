@@ -40,7 +40,7 @@ def main():
     purpose_information = {"Criticizing": 0, "Comparison": 0, "Use": 0, "Substantiating": 0, "Basis": 0, "Neutral": 0}
 
     # import data
-    for line in codecs.open("./annotated_sentences.txt", "r", "utf-8", 'ignore').readlines():
+    for line in codecs.open("./Data/annotated_sentences.txt", "r", "utf-8", 'ignore').readlines():
         data_number = data_number + 1
         parts = line.split('\t')
         if parts[12].strip() != "0":

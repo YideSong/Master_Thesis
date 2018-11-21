@@ -15,19 +15,19 @@ from sklearn.metrics import recall_score
 from sklearn.metrics import f1_score
 
 #read preprocessed data from local
-with open('C:/Users/songi/PycharmProjects/MasterThesis/citation_with_context.pk', 'rb') as f:
+with open('./Pickle_Data/citation_with_context.pk', 'rb') as f:
     texts_with_context = pickle.load(f)
     print(texts_with_context[1])
-with open('C:/Users/songi/PycharmProjects/MasterThesis/pre_citation_with_context.pk', 'rb') as f:
+with open('./Pickle_Data/pre_citation_with_context.pk', 'rb') as f:
     pre_texts_with_context = pickle.load(f)
     print(pre_texts_with_context[1])
-with open('C:/Users/songi/PycharmProjects/MasterThesis/citation.pk', 'rb') as f:
+with open('./Pickle_Data/citation.pk', 'rb') as f:
     texts = pickle.load(f)
     print(texts[1])
-with open('C:/Users/songi/PycharmProjects/MasterThesis/polarities.pk', 'rb') as f:
+with open('./Pickle_Data/polarities.pk', 'rb') as f:
     polarities = pickle.load(f)
 #    print(polarities)
-with open('C:/Users/songi/PycharmProjects/MasterThesis/purposes.pk', 'rb') as f:
+with open('./Pickle_Data/purposes.pk', 'rb') as f:
     purposes = pickle.load(f)
 #    print(purposes)
 

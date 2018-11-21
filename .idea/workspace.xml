@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4a46ccf-f847-4726-8797-ee5222148225" name="Default" comment="Test commit1" />
+    <list default="true" id="c4a46ccf-f847-4726-8797-ee5222148225" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SVM.py" afterPath="$PROJECT_DIR$/SVM.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Word_Embedding.py" afterPath="$PROJECT_DIR$/Word_Embedding.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tfidf.py" afterPath="$PROJECT_DIR$/tfidf.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/word_embedding_new" afterPath="$PROJECT_DIR$/word_embedding_new" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="SVM.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SVM.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SVM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1965">
-              <caret line="239" column="0" lean-forward="false" selection-start-line="239" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
+            <state relative-caret-position="-5083">
+              <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -24,11 +30,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="tfidf.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tfidf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1127">
+              <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Data anlysis.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data anlysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="240">
+              <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
               <folding>
                 <marker date="1542832021968" expanded="true" signature="728:5856" ph="..." />
               </folding>
@@ -39,22 +55,10 @@
       <file leaf-file-name="Word_Embedding.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Word_Embedding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1127">
-              <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            <state relative-caret-position="-841">
+              <caret line="42" column="36" lean-forward="false" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="citation_context_analysis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/citation_context_analysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,7 +67,7 @@
       <file leaf-file-name="Data_preprocessing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1656">
+            <state relative-caret-position="442">
               <caret line="85" column="30" lean-forward="false" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
               <folding />
             </state>
@@ -92,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="word_embedding_new.ipynb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="word_embedding_new.ipynb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/word_embedding_new.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="9" />
+              <selected id="0" />
             </state>
           </provider>
         </entry>
@@ -105,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/Word_Embedding.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="11" />
+              <selected id="10" />
             </state>
           </provider>
         </entry>
@@ -113,10 +117,10 @@
       <file leaf-file-name="word_embedding_new" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/word_embedding_new">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3657">
-              <caret line="172" column="55" lean-forward="false" selection-start-line="172" selection-start-column="55" selection-end-line="172" selection-end-column="55" />
+            <state relative-caret-position="373">
+              <caret line="182" column="17" lean-forward="true" selection-start-line="182" selection-start-column="17" selection-end-line="182" selection-end-column="17" />
               <folding>
-                <marker date="1542832021968" expanded="true" signature="7051:7162" ph="..." />
+                <marker date="1542834291456" expanded="true" signature="6769:6880" ph="..." />
               </folding>
             </state>
           </provider>
@@ -152,15 +156,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/stopwords.txt" />
-        <option value="$PROJECT_DIR$/Word_Embedding.py" />
-        <option value="$PROJECT_DIR$/tfidf.py" />
         <option value="$PROJECT_DIR$/Word_Embedding.ipynb" />
         <option value="$PROJECT_DIR$/word_embedding_new.ipynb" />
         <option value="$PROJECT_DIR$/Data anlysis.py" />
-        <option value="$PROJECT_DIR$/Data_preprocessing.py" />
         <option value="$PROJECT_DIR$/Example_pipeline.py" />
-        <option value="$PROJECT_DIR$/word_embedding_new" />
+        <option value="$PROJECT_DIR$/Data_preprocessing.py" />
         <option value="$PROJECT_DIR$/SVM.py" />
+        <option value="$PROJECT_DIR$/tfidf.py" />
+        <option value="$PROJECT_DIR$/Word_Embedding.py" />
+        <option value="$PROJECT_DIR$/word_embedding_new" />
       </list>
     </option>
   </component>
@@ -186,22 +190,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MasterThesis" />
+              <option name="myItemId" value="Master_Thesis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MasterThesis" />
+              <option name="myItemId" value="Master_Thesis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,7 +231,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SVM">
+  <component name="RunManager" selected="Python.tfidf">
     <configuration default="false" name="SVM" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -391,11 +395,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.SVM" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Data anlysis" />
-        <item index="2" class="java.lang.String" itemvalue="Python.tfidf" />
-        <item index="3" class="java.lang.String" itemvalue="Python.word_embedding_new" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Data_preprocessing" />
+        <item index="0" class="java.lang.String" itemvalue="Python.tfidf" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Data_preprocessing" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Data anlysis" />
+        <item index="3" class="java.lang.String" itemvalue="Python.SVM" />
+        <item index="4" class="java.lang.String" itemvalue="Python.word_embedding_new" />
       </list>
     </recent_temporary>
   </component>
@@ -539,16 +543,23 @@
       <option name="project" value="LOCAL" />
       <updated>1542831410546</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Change file path">
+      <created>1542833739911</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1542833739911</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="2" width="1934" height="1036" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30219206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34655532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3570634" sideWeight="0.5062631" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36262515" sideWeight="0.49373695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36262515" sideWeight="0.50835073" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36262515" sideWeight="0.49164927" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -572,7 +583,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Test commit" />
     <MESSAGE value="Test commit1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test commit1" />
+    <MESSAGE value="Change file path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change file path" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -586,7 +598,7 @@
         <state relative-caret-position="2553">
           <caret line="124" column="17" lean-forward="false" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
           <folding>
-            <marker date="1542832021968" expanded="true" signature="7051:7162" ph="..." />
+            <marker date="1542834291456" expanded="true" signature="6769:6880" ph="..." />
           </folding>
         </state>
       </provider>
@@ -624,7 +636,7 @@
         <state relative-caret-position="3105">
           <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
           <folding>
-            <marker date="1542832021968" expanded="true" signature="7051:7162" ph="..." />
+            <marker date="1542834291456" expanded="true" signature="6769:6880" ph="..." />
           </folding>
         </state>
       </provider>
@@ -685,7 +697,7 @@
         <state relative-caret-position="3105">
           <caret line="147" column="0" lean-forward="true" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
           <folding>
-            <marker date="1542832021968" expanded="true" signature="7051:7162" ph="..." />
+            <marker date="1542834291456" expanded="true" signature="6769:6880" ph="..." />
           </folding>
         </state>
       </provider>
@@ -874,39 +886,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tfidf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2461">
-          <caret line="107" column="1" lean-forward="false" selection-start-line="107" selection-start-column="1" selection-end-line="107" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tfidf.ipynb" />
     <entry file="file://$PROJECT_DIR$/citation_context_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data anlysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-          <folding>
-            <marker date="1542832021968" expanded="true" signature="728:5856" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1656">
-          <caret line="85" column="30" lean-forward="false" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,47 +915,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/word_embedding_new.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="9" />
+    <entry file="file://$PROJECT_DIR$/Data anlysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding>
+            <marker date="1542832021968" expanded="true" signature="728:5856" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="85" column="30" lean-forward="false" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5083">
+          <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1127">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word_Embedding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-841">
+          <caret line="42" column="36" lean-forward="false" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_embedding_new">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="182" column="17" lean-forward="true" selection-start-line="182" selection-start-column="17" selection-end-line="182" selection-end-column="17" />
+          <folding>
+            <marker date="1542834291456" expanded="true" signature="6769:6880" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Word_Embedding.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="11" />
+          <selected id="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/word_embedding_new">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3657">
-          <caret line="172" column="55" lean-forward="false" selection-start-line="172" selection-start-column="55" selection-end-line="172" selection-end-column="55" />
-          <folding>
-            <marker date="1542832021968" expanded="true" signature="7051:7162" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Word_Embedding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="239" column="0" lean-forward="false" selection-start-line="239" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/word_embedding_new.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
         </state>
       </provider>
     </entry>
