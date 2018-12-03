@@ -227,7 +227,7 @@ print("recall_scores mean: %s, std. deviation: %s" %(np.mean(recall_scores)*100.
 print("fscores mean: %s, std. deviation: %s" %(np.mean(fscores)*100.0,np.std(fscores)*100.0))
 
 
-
+#test
 #Backup: old models
 # # train classifier svm
 # print("------SVM model: svm.LinearSVC() with Kfold. input: vector of each citation, label: polarities-------")
