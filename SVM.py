@@ -98,8 +98,8 @@ X_train, X_test, y_train, y_test = train_test_split(citation_with_context_X, pol
 
 # Define different values for the hyperparameter optimization
 kernel_list = ['rbf', 'linear']
-c_list = [0.1, 1, 10, 50, 75, 80, 85, 90, 95,100]
-g_list = [0.001, 0.01, 0.1, 0.2, 0.3, 0.4, 0.5, 0.75, 1, 10, 100]
+c_list = [ 80, 85, 90, 95, 100]
+g_list = [ 0.3, 0.4, 0.5, 0.75, 1, 10]
 # Build cartesian product
 configs = list(itertools.product(c_list, g_list,kernel_list))
 
@@ -109,7 +109,7 @@ best_c = None
 best_g = None
 
 for c, g, kernel in configs:
-    kf = KFold(n_splits=5, shuffle=False)
+    kf = KFold(n_splits=10, shuffle=False)
     clf = svm.SVC(kernel=kernel, C=c, gamma=g)
     fscores = []
     current_f1 = 0
@@ -166,8 +166,8 @@ X_train, X_test, y_train, y_test = train_test_split(citation_with_context_X, pur
 
 # Define different values for the hyperparameter optimization
 kernel_list = ['rbf', 'linear']
-c_list = [0.1, 1, 10, 50, 75, 80, 85, 90, 95,100]
-g_list = [0.001, 0.01, 0.1, 0.2, 0.3, 0.4, 0.5, 0.75, 1, 10, 100]
+c_list = [ 80, 85, 90, 95,100]
+g_list = [ 0.3, 0.4, 0.5, 0.75, 1, 10]
 # Build cartesian product
 configs = list(itertools.product(c_list, g_list,kernel_list))
 
@@ -177,7 +177,7 @@ best_c = None
 best_g = None
 
 for c, g, kernel in configs:
-    kf = KFold(n_splits=5, shuffle=False)
+    kf = KFold(n_splits=10, shuffle=False)
     clf = svm.SVC(kernel=kernel, C=c, gamma=g)
     fscores = []
     current_f1 = 0

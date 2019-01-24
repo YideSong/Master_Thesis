@@ -19,7 +19,7 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer, Tf
 # glove2word2vec(glove_input_file, word2vec_output_file)
 
 # load the Stanford GloVe model
-filename = 'glove.6B.300d.txt.word2vec'
+filename = '../Model/acl_vectors_glove_300d.txt.word2vec'
 model = KeyedVectors.load_word2vec_format(filename, binary=False)
 
 #Some example of word embeding
@@ -93,46 +93,43 @@ tfidf_matrix = tfidf_matrix.toarray()
 print(len(tfidf_matrix))
 
 # Calculate for each citation (whiout contexts) a Vector, save those vectors in a List -> vector_citations_X
-vector_citations_X = []
-sen_index = 0
-tfidf = 0
-vocabulary_index = 0
-for sen in citation_X:
-    token_sen = nltk.word_tokenize(sen)
-    sum_tfidt  = 0
-    vec_sen = np.zeros(300)
-    for token in token_sen:
-        if token in model.wv.vocab and token in vectorizer.get_feature_names():
-            vocabulary_index = vectorizer.vocabulary_[token]
-            tfidf = tfidf_matrix[sen_index][vocabulary_index]
-            sum_tfidt = sum_tfidt + tfidf
-            vec_sen = vec_sen + model[token] * tfidf #each vectors weighted by the tfidf value
-    #print(len(vec_sen))
-    vec_sen = vec_sen / sum_tfidt
-    vector_citations_X.append(vec_sen)
-    sen_index =sen_index + 1
-print("--------Number of citations converted to vectors: ------------")
-print(len(vector_citations_X))
-#print("-------Example vector for first citation: --------------------")
-#print(vector_citation_with_contexts_X[0])
+# vector_citations_X = []
+# sen_index = 0
+# tfidf = 0
+# vocabulary_index = 0
+# for sen in citation_X:
+#     token_sen = nltk.word_tokenize(sen)
+#     sum_tfidt  = 0
+#     vec_sen = np.zeros(300)
+#     for token in token_sen:
+#         if token in model.wv.vocab and token in vectorizer.get_feature_names():
+#             vocabulary_index = vectorizer.vocabulary_[token]
+#             tfidf = tfidf_matrix[sen_index][vocabulary_index]
+#             sum_tfidt = sum_tfidt + tfidf
+#             vec_sen = vec_sen + model[token] * tfidf #each vectors weighted by the tfidf value
+#     #print(len(vec_sen))
+#     vec_sen = vec_sen / sum_tfidt
+#     vector_citations_X.append(vec_sen)
+#     sen_index =sen_index + 1
+# print("--------Number of citations converted to vectors: ------------")
+# print(len(vector_citations_X))
+# #print("-------Example vector for first citation: --------------------")
+# #print(vector_citation_with_contexts_X[0])
 
 # Calculate for each citations (with contexts) a Vector, save those vectors in a List -> vector_citation_with_contexts_X
 vector_citation_with_contexts_X = []
 sen_index = 0
-tfidf = 0
 vocabulary_index = 0
 for sen in citation_with_context_X:
     token_sen = nltk.word_tokenize(sen)
-    sum_tfidf = 0
     vec_sen = np.zeros(300)
+    sen_len=0
     for token in token_sen:
-        if token in model.wv.vocab and token in vectorizer.get_feature_names():
-            vocabulary_index = vectorizer.vocabulary_[token]
-            tfidf = tfidf_matrix[sen_index][vocabulary_index]
-            sum_tfidf = sum_tfidf + tfidf
-            vec_sen = vec_sen + model[token] * tfidf
+        if token in model.wv.vocab:
+            sen_len=sen_len+1
+            vec_sen = vec_sen + model[token]
     #print(len(vec_sen))
-    vec_sen = vec_sen / sum_tfidf
+    vec_sen = vec_sen / sen_len
     vector_citation_with_contexts_X.append(vec_sen)
     sen_index = sen_index + 1
 print("--------Number of citations converted to vectors: ------------")
@@ -140,44 +137,44 @@ print(len(vector_citation_with_contexts_X))
 #print("-------Example vector for first citation: --------------------")
 #print(vector_citation_with_contexts_X[0])
 
-# Calculate for each citations (with contexts and preprocessing) a Vector, save those vectors in a List -> vector_citation_with_contexts_X
-vector_pre_citation_with_contexts_X = []
-sen_index = 0
-tfidf = 0
-vocabulary_index = 0
-for sen in pre_citation_with_context_X:
-    token_sen = nltk.word_tokenize(sen)
-    sum_tfidf = 0
-    vec_sen = np.zeros(300)
-    for token in token_sen:
-        if token in model.wv.vocab and token in vectorizer.get_feature_names():
-            vocabulary_index = vectorizer.vocabulary_[token]
-            tfidf = tfidf_matrix[sen_index][vocabulary_index]
-            sum_tfidf = sum_tfidf + tfidf
-            vec_sen = vec_sen + model[token] * tfidf
-    #print(len(vec_sen))
-    vec_sen = vec_sen / sum_tfidf
-    vector_pre_citation_with_contexts_X.append(vec_sen)
-    sen_index =sen_index + 1
-print("--------Number of citations converted to vectors: ------------")
-print(len(vector_pre_citation_with_contexts_X))
-#print("-------Example vector for first citation: --------------------")
-#print(vector_citation_with_contexts_X[0])
+# # Calculate for each citations (with contexts and preprocessing) a Vector, save those vectors in a List -> vector_citation_with_contexts_X
+# vector_pre_citation_with_contexts_X = []
+# sen_index = 0
+# tfidf = 0
+# vocabulary_index = 0
+# for sen in pre_citation_with_context_X:
+#     token_sen = nltk.word_tokenize(sen)
+#     sum_tfidf = 0
+#     vec_sen = np.zeros(300)
+#     for token in token_sen:
+#         if token in model.wv.vocab and token in vectorizer.get_feature_names():
+#             vocabulary_index = vectorizer.vocabulary_[token]
+#             tfidf = tfidf_matrix[sen_index][vocabulary_index]
+#             sum_tfidf = sum_tfidf + tfidf
+#             vec_sen = vec_sen + model[token] * tfidf
+#     #print(len(vec_sen))
+#     vec_sen = vec_sen / sum_tfidf
+#     vector_pre_citation_with_contexts_X.append(vec_sen)
+#     sen_index =sen_index + 1
+# print("--------Number of citations converted to vectors: ------------")
+# print(len(vector_pre_citation_with_contexts_X))
+# #print("-------Example vector for first citation: --------------------")
+# #print(vector_citation_with_contexts_X[0])
 
-# Save vectors of each citations to local.
-with open('./Pickle_Data/citation_vec.pk', 'wb') as f:
-    pickle.dump(vector_citations_X, f)
-print("--------Vectors saved in local------------")
+# # Save vectors of each citations to local.
+# with open('./Pickle_Data/citation_vec.pk', 'wb') as f:
+#     pickle.dump(vector_citations_X, f)
+# print("--------Vectors saved in local------------")
 
 # Save vectors of each citations (with contexts) to local.
 with open('./Pickle_Data/citation_with_context_vec.pk', 'wb') as f:
     pickle.dump(vector_citation_with_contexts_X, f)
 print("--------Vectors saved in local------------")
 
-# Save vectors of each citations (with contexts) to local.
-with open('./Pickle_Data/pre_citation_with_context_vec.pk', 'wb') as f:
-    pickle.dump(vector_pre_citation_with_contexts_X, f)
-# with open('C:/Users/songi/PycharmProjects/MasterThesis/citation_with_context_vec.pk', 'rb') as f:
-#     data = pickle.load(f)
-#     print(data[0])
-print("--------Vectors saved in local------------")
+# # Save vectors of each citations (with contexts) to local.
+# with open('./Pickle_Data/pre_citation_with_context_vec.pk', 'wb') as f:
+#     pickle.dump(vector_pre_citation_with_contexts_X, f)
+# # with open('C:/Users/songi/PycharmProjects/MasterThesis/citation_with_context_vec.pk', 'rb') as f:
+# #     data = pickle.load(f)
+# #     print(data[0])
+# print("--------Vectors saved in local------------")
